@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
+:root {
+    --primary-color:#34D399;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #EFF6FF;
+    color: black;
+}
+
+.container {
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+h1 {
+    margin: 1.5rem;
+}
+
+label {
+    margin: 0.5em;
+}
+
+input {
+    margin: 1em;
+    padding: 0.5em;
+    font-size: 0.8em;
+    width: 160px;
+}
+
+::placeholder {
+    text-align: center;
+}
+
+#btn-check {
+    width: 10%;
+    padding: 0.8em;
+    margin: 1em;
+    background-color: white;
+    color: var(--primary-color);
+    border:1px solid;
+    border-radius: 0.25rem;
+    border-color: var(--primary-color);
+}
+
+#btn-check:hover {
+    background-color: var(--primary-color);
+    cursor: pointer;
+    color: white;
+}
+
+#message {
+    margin: 1em;
+    font-size: larger;
+}
+
+.list-item-inline {
+    display: inline-block;
+}
+.footer {
+    background-color: var(--primary-blue);
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.footer i {
+    color: var(--primary-color);
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.footer i:hover {
+    color: #059669;
+}
