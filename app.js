@@ -9,14 +9,14 @@ function calculateProftAndLoss(purchase, quantity, current) {
 
     if (current > purchase) {
         let profit = (current - purchase) * quantity;
-        let profitPercentage = (profit / purchase) * 100;
+        let profitPercentage = (profit / (purchase*quantity)) * 100;
         message.style.color = "#26c40e";
-        showMessage("You gained "+profitPercentage.toFixed(2)+"%. Your total profit is "+profit.toFixed(2));
+        showMessage("You gained "+profitPercentage.toFixed(2)+"%. Your total profit is ₹"+profit.toFixed(2));
     } else if (purchase > current) {
         let loss = (purchase - current) * quantity;
-        let lossPercentage = (loss / purchase) * 100;
+        let lossPercentage = (loss / (purchase*quantity)) * 100;
         message.style.color = "#f50a16";
-        showMessage("You lost ${lossPercentage.toFixed(2)}%. Your total loss is ${loss.toFixed(2)}");
+        showMessage("You lost "+lossPercentage.toFixed(2)+"%. Your total loss is ₹"+loss.toFixed(2));
     } else {
         message.style.color = "#FBBF24";
         showMessage("Neither profit nor loss. Have Patience!");
